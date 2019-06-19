@@ -52,7 +52,7 @@ Dans le projet récupéré sur git,
 
 	Schéma:
 
-	![picture](img/schema_archi_rest.png)
+![picture](img/schema_archi_rest.png)
 
 
 ## 5. Schema de l'architecture
