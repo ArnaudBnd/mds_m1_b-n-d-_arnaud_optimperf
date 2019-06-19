@@ -19,7 +19,7 @@ exports.createNewTask = (req, res) => {
   });
 };
 
-exports.readTask = (req, body) => {
+exports.readTask = (req, res) => {
   Task.findById(req.params.taskid, (err, task) => {
     if (err) {
       res.status(500).send(err);
