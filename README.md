@@ -37,6 +37,7 @@ Dans le projet récupéré sur git,
 	- Allez dans le fichier '.env-sample'
 	- Ecrivez votre password et URL apres les "="
 	- Renommer le fichier '.env-sample' par '.env' pour appliquer les modifications
+	- Puis éxécutez la commande: 'npm run start'
 
 
 ## 4. Explication de l'application
@@ -49,56 +50,20 @@ Dans le projet récupéré sur git,
 
 	- Nodemon: surveillera toute modification apportée et redémarrera le serveur si nécessaire.
 
+	Schéma:
+
+	![picture](img/schema_archi_rest.png)
+
 
 ## 5. Schema de l'architecture
+
+![picture](img/schema_archi.png)
 
 	- shards: un shard contient un sous ensemble de données. Les shards sont au centre de la scalabilité horizontale du cluster. Pour l’agrandir, il suffit d’ajouter des shards.
 
 	- Router: Une instance mongos permet de router les requêtes vers le shard approprié, elle agit à la fois comme routeur et équilibreur de charge. Elle joue le rôle d’interface entre l’application cliente et le sharded cluster. Le routeur communique avec le serveur de configuration pour connaitre la répartition des données et donc choisir le bon shard.
 
 	- Serveur de configuration: Il stocke les métadonnées et les paramètres de configuration du cluster. Il est en charge de la localisation des données, il sait quelles données se trouvent sur quels shards.
-
-
-Schéma:
-
-
-![picture](img/schema_archi.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
