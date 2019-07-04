@@ -1,0 +1,116 @@
+2019-07-03T09:05:11.646+0000 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-07-03T09:05:11.650+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=30002 dbpath=/data/db 64-bit host=8d7f6c8c9a22
+2019-07-03T09:05:11.650+0000 I CONTROL  [initandlisten] db version v4.0.10
+2019-07-03T09:05:11.651+0000 I CONTROL  [initandlisten] git version: c389e7f69f637f7a1ac3cc9fae843b635f20b766
+2019-07-03T09:05:11.651+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2019-07-03T09:05:11.652+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-07-03T09:05:11.652+0000 I CONTROL  [initandlisten] modules: none
+2019-07-03T09:05:11.653+0000 I CONTROL  [initandlisten] build environment:
+2019-07-03T09:05:11.653+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2019-07-03T09:05:11.654+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2019-07-03T09:05:11.654+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-07-03T09:05:11.655+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true, port: 30002 }, replication: { replSet: "my-mongo-set" }, systemLog: { destination: "file", path: "mongo.log" } }
+2019-07-03T09:05:11.655+0000 I STORAGE  [initandlisten] 
+2019-07-03T09:05:11.656+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2019-07-03T09:05:11.656+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2019-07-03T09:05:11.657+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=487M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-07-03T09:05:12.715+0000 I STORAGE  [initandlisten] WiredTiger message [1562144712:715017][1:0x7f90cf714a80], txn-recover: Set global recovery timestamp: 0
+2019-07-03T09:05:12.730+0000 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-07-03T09:05:12.751+0000 I CONTROL  [initandlisten] 
+2019-07-03T09:05:12.752+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-07-03T09:05:12.752+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-07-03T09:05:12.753+0000 I CONTROL  [initandlisten] 
+2019-07-03T09:05:12.757+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 4450a941-51df-4af5-8cae-9cec7db83adb
+2019-07-03T09:05:12.770+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2019-07-03T09:05:12.772+0000 I STORAGE  [initandlisten] createCollection: local.replset.oplogTruncateAfterPoint with generated UUID: 1e56747b-9cee-4cca-b5ce-3d5b73094232
+2019-07-03T09:05:12.810+0000 I STORAGE  [initandlisten] createCollection: local.replset.minvalid with generated UUID: 4cf20c43-b787-436b-b11e-fa0779340e27
+2019-07-03T09:05:12.873+0000 I REPL     [initandlisten] Did not find local voted for document at startup.
+2019-07-03T09:05:12.883+0000 I REPL     [initandlisten] Did not find local Rollback ID document at startup. Creating one.
+2019-07-03T09:05:12.883+0000 I STORAGE  [initandlisten] createCollection: local.system.rollback.id with generated UUID: ccf42d36-96cc-4d9a-854b-6fefac3e5e9b
+2019-07-03T09:05:12.898+0000 I REPL     [initandlisten] Initialized the rollback ID to 1
+2019-07-03T09:05:12.899+0000 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2019-07-03T09:05:12.900+0000 I NETWORK  [initandlisten] waiting for connections on port 30002
+2019-07-03T09:05:12.900+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: config.system.sessions does not exist
+2019-07-03T09:05:12.900+0000 I CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Replication has not yet been configured
+2019-07-03T09:05:16.090+0000 I NETWORK  [listener] connection accepted from 172.22.0.5:47792 #1 (1 connection now open)
+2019-07-03T09:05:16.103+0000 I NETWORK  [conn1] received client metadata from 172.22.0.5:47792 conn1: { driver: { name: "nodejs", version: "3.2.7" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.9.125-linuxkit" }, platform: "Node.js v7.10.1, LE, mongodb-core: 3.2.7" }
+2019-07-03T09:05:16.118+0000 I NETWORK  [conn1] end connection 172.22.0.5:47792 (0 connections now open)
+2019-07-03T09:05:16.134+0000 I NETWORK  [listener] connection accepted from 172.22.0.5:47802 #2 (1 connection now open)
+2019-07-03T09:05:16.136+0000 I NETWORK  [conn2] received client metadata from 172.22.0.5:47802 conn2: { driver: { name: "nodejs", version: "3.2.7" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.9.125-linuxkit" }, platform: "Node.js v7.10.1, LE, mongodb-core: 3.2.7" }
+2019-07-03T09:05:16.140+0000 I NETWORK  [conn2] end connection 172.22.0.5:47802 (0 connections now open)
+2019-07-03T09:05:16.474+0000 I NETWORK  [listener] connection accepted from 172.22.0.4:51280 #3 (1 connection now open)
+2019-07-03T09:05:16.475+0000 I NETWORK  [conn3] end connection 172.22.0.4:51280 (0 connections now open)
+2019-07-03T09:05:16.482+0000 I NETWORK  [listener] connection accepted from 172.22.0.4:51284 #4 (1 connection now open)
+2019-07-03T09:05:16.483+0000 I NETWORK  [conn4] received client metadata from 172.22.0.4:51284 conn4: { driver: { name: "NetworkInterfaceTL", version: "4.0.10" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+2019-07-03T09:05:16.486+0000 I ASIO     [Replication] Connecting to mongo1:30001
+2019-07-03T09:05:18.512+0000 I STORAGE  [replexec-0] createCollection: local.system.replset with generated UUID: c700b0b3-287e-4541-9835-c33b9b32b13c
+2019-07-03T09:05:18.514+0000 I NETWORK  [listener] connection accepted from 172.22.0.3:60904 #8 (2 connections now open)
+2019-07-03T09:05:18.516+0000 I NETWORK  [conn8] end connection 172.22.0.3:60904 (1 connection now open)
+2019-07-03T09:05:18.527+0000 I REPL     [replexec-0] New replica set config in use: { _id: "my-mongo-set", version: 1, protocolVersion: 1, writeConcernMajorityJournalDefault: true, members: [ { _id: 1, host: "mongo1:30001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "mongo2:30002", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "mongo3:30003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5d1c6fcccd0ce696fd03a9ed') } }
+2019-07-03T09:05:18.530+0000 I REPL     [replexec-0] This node is mongo2:30002 in the config
+2019-07-03T09:05:18.531+0000 I REPL     [replexec-0] transition to STARTUP2 from STARTUP
+2019-07-03T09:05:18.533+0000 I REPL     [replexec-0] Starting replication storage threads
+2019-07-03T09:05:18.538+0000 I REPL     [replexec-1] Member mongo1:30001 is now in state SECONDARY
+2019-07-03T09:05:18.540+0000 I ASIO     [Replication] Connecting to mongo3:30003
+2019-07-03T09:05:18.547+0000 I NETWORK  [listener] connection accepted from 172.22.0.3:60906 #9 (2 connections now open)
+2019-07-03T09:05:18.552+0000 I STORAGE  [replexec-0] createCollection: local.temp_oplog_buffer with generated UUID: 8c394240-5127-4479-848c-ff1d050870cf
+2019-07-03T09:05:18.552+0000 I NETWORK  [conn9] received client metadata from 172.22.0.3:60906 conn9: { driver: { name: "NetworkInterfaceTL", version: "4.0.10" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+2019-07-03T09:05:18.565+0000 I REPL     [replication-0] Starting initial sync (attempt 1 of 10)
+2019-07-03T09:05:18.566+0000 I STORAGE  [replication-0] Finishing collection drop for local.temp_oplog_buffer (8c394240-5127-4479-848c-ff1d050870cf).
+2019-07-03T09:05:18.568+0000 I STORAGE  [replication-0] createCollection: local.temp_oplog_buffer with generated UUID: 9a051549-a64c-4d97-9c73-60edf79ab298
+2019-07-03T09:05:18.577+0000 I REPL     [replexec-2] Member mongo3:30003 is now in state STARTUP2
+2019-07-03T09:05:18.606+0000 I NETWORK  [listener] connection accepted from 172.22.0.4:51306 #11 (3 connections now open)
+2019-07-03T09:05:18.607+0000 I REPL     [replication-0] sync source candidate: mongo1:30001
+2019-07-03T09:05:18.608+0000 I NETWORK  [conn11] received client metadata from 172.22.0.4:51306 conn11: { driver: { name: "MongoDB Internal Client", version: "4.0.10" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+2019-07-03T09:05:18.610+0000 I REPL     [replication-0] Initial syncer oplog truncation finished in: 0ms
+2019-07-03T09:05:18.612+0000 I REPL     [replication-0] ******
+2019-07-03T09:05:18.614+0000 I REPL     [replication-0] creating replication oplog of size: 2537MB...
+2019-07-03T09:05:18.615+0000 I STORAGE  [replication-0] createCollection: local.oplog.rs with generated UUID: 4f95301e-dfa8-4375-99a5-3fba3b3ad057
+2019-07-03T09:05:18.623+0000 I STORAGE  [replication-0] Starting OplogTruncaterThread local.oplog.rs
+2019-07-03T09:05:18.624+0000 I STORAGE  [replication-0] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2019-07-03T09:05:18.626+0000 I STORAGE  [replication-0] Scanning the oplog to determine where to place markers for truncation
+2019-07-03T09:05:18.658+0000 I REPL     [replication-0] ******
+2019-07-03T09:05:18.659+0000 I STORAGE  [replication-0] dropAllDatabasesExceptLocal 1
+2019-07-03T09:05:18.660+0000 I ASIO     [RS] Connecting to mongo1:30001
+2019-07-03T09:05:18.674+0000 I ASIO     [RS] Connecting to mongo1:30001
+2019-07-03T09:05:18.682+0000 I REPL     [replication-1] CollectionCloner::start called, on ns:admin.system.version
+2019-07-03T09:05:18.688+0000 I STORAGE  [repl writer worker 9] createCollection: admin.system.version with provided UUID: f7569d39-0e10-430d-854e-8f6d3f354849
+2019-07-03T09:05:18.703+0000 I INDEX    [repl writer worker 9] build index on: admin.system.version properties: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }
+2019-07-03T09:05:18.703+0000 I INDEX    [repl writer worker 9] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2019-07-03T09:05:18.706+0000 I COMMAND  [repl writer worker 2] setting featureCompatibilityVersion to 4.0
+2019-07-03T09:05:18.707+0000 I NETWORK  [repl writer worker 2] Skip closing connection for connection # 11
+2019-07-03T09:05:18.707+0000 I NETWORK  [repl writer worker 2] Skip closing connection for connection # 9
+2019-07-03T09:05:18.708+0000 I NETWORK  [repl writer worker 2] Skip closing connection for connection # 4
+2019-07-03T09:05:18.709+0000 I REPL     [repl writer worker 2] CollectionCloner ns:admin.system.version finished cloning with status: OK
+2019-07-03T09:05:18.714+0000 I REPL     [repl writer worker 2] Finished cloning data: OK. Beginning oplog replay.
+2019-07-03T09:05:18.716+0000 I REPL     [replication-0] No need to apply operations. (currently at { : Timestamp(1562144716, 1) })
+2019-07-03T09:05:18.720+0000 I REPL     [replication-0] Finished fetching oplog during initial sync: CallbackCanceled: error in fetcher batch callback: oplog fetcher is shutting down. Last fetched optime and hash: { ts: Timestamp(0, 0), t: -1 }[0]
+2019-07-03T09:05:18.721+0000 I REPL     [replication-0] Initial sync attempt finishing up.
+2019-07-03T09:05:18.722+0000 I REPL     [replication-0] Initial Sync Attempt Statistics: { failedInitialSyncAttempts: 0, maxFailedInitialSyncAttempts: 10, initialSyncStart: new Date(1562144718565), initialSyncAttempts: [], fetchedMissingDocs: 0, appliedOps: 0, initialSyncOplogStart: Timestamp(1562144716, 1), initialSyncOplogEnd: Timestamp(1562144716, 1), databases: { databasesCloned: 1, admin: { collections: 1, clonedCollections: 1, start: new Date(1562144718675), end: new Date(1562144718714), elapsedMillis: 39, admin.system.version: { documentsToCopy: 1, documentsCopied: 1, indexes: 1, fetchedBatches: 1, start: new Date(1562144718683), end: new Date(1562144718714), elapsedMillis: 31 } } } }
+2019-07-03T09:05:18.723+0000 I STORAGE  [replication-0] Finishing collection drop for local.temp_oplog_buffer (9a051549-a64c-4d97-9c73-60edf79ab298).
+2019-07-03T09:05:18.728+0000 I REPL     [replication-0] initial sync done; took 0s.
+2019-07-03T09:05:18.728+0000 I REPL     [replication-0] transition to RECOVERING from STARTUP2
+2019-07-03T09:05:18.729+0000 I REPL     [replication-0] Starting replication fetcher thread
+2019-07-03T09:05:18.729+0000 I REPL     [replication-0] Starting replication applier thread
+2019-07-03T09:05:18.730+0000 I REPL     [rsSync-0] Starting oplog application
+2019-07-03T09:05:18.730+0000 I REPL     [rsBackgroundSync] could not find member to sync from
+2019-07-03T09:05:18.730+0000 I REPL     [replication-0] Starting replication reporter thread
+2019-07-03T09:05:18.731+0000 I REPL     [rsSync-0] transition to SECONDARY from RECOVERING
+2019-07-03T09:05:18.732+0000 I REPL     [rsSync-0] Resetting sync source to empty, which was :27017
+2019-07-03T09:05:18.733+0000 I REPL     [replexec-3] Member mongo3:30003 is now in state SECONDARY
+2019-07-03T09:05:27.150+0000 I STORAGE  [conn4] createCollection: local.replset.election with generated UUID: 6ef4611a-bdb8-4bd7-b610-6c5afb0d3134
+2019-07-03T09:05:27.172+0000 I NETWORK  [listener] connection accepted from 172.22.0.4:51318 #14 (4 connections now open)
+2019-07-03T09:05:27.173+0000 I NETWORK  [conn14] received client metadata from 172.22.0.4:51318 conn14: { driver: { name: "NetworkInterfaceTL", version: "4.0.10" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+2019-07-03T09:05:27.267+0000 I REPL     [replexec-1] Member mongo1:30001 is now in state PRIMARY
+2019-07-03T09:05:28.676+0000 I CONNPOOL [RS] Ending connection to host mongo1:30001 due to bad connection status; 1 connections to that host remain open
+2019-07-03T09:05:28.832+0000 I NETWORK  [conn11] end connection 172.22.0.4:51306 (3 connections now open)
+2019-07-03T09:05:29.748+0000 I REPL     [rsBackgroundSync] sync source candidate: mongo1:30001
+2019-07-03T09:05:29.752+0000 I REPL     [rsBackgroundSync] Changed sync source from empty to mongo1:30001
+2019-07-03T09:05:29.754+0000 I ASIO     [RS] Connecting to mongo1:30001
+2019-07-03T09:05:29.769+0000 I STORAGE  [repl writer worker 6] createCollection: config.transactions with provided UUID: 5b30a7b3-ba2e-4c5d-aaa5-06f3c8e8c7d4
+2019-07-03T09:05:29.790+0000 I STORAGE  [repl writer worker 8] createCollection: admin.system.keys with provided UUID: 3f75461a-fbeb-4adf-aaed-6ba3c365a33f
+2019-07-03T09:05:29.819+0000 I STORAGE  [replication-0] Triggering the first stable checkpoint. Initial Data: Timestamp(1562144716, 1) PrevStable: Timestamp(0, 0) CurrStable: Timestamp(1562144728, 4)
+2019-07-03T09:05:29.839+0000 I STORAGE  [repl writer worker 12] createCollection: test.todos with provided UUID: 300f1217-ab1f-4124-9c3d-9c6b3c663996
+2019-07-03T09:05:37.152+0000 I NETWORK  [conn4] end connection 172.22.0.4:51284 (2 connections now open)
+2019-07-03T09:06:22.822+0000 I NETWORK  [listener] connection accepted from 172.22.0.5:47854 #16 (3 connections now open)
+2019-07-03T09:06:22.835+0000 I NETWORK  [conn16] received client metadata from 172.22.0.5:47854 conn16: { driver: { name: "nodejs", version: "3.2.7" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.9.125-linuxkit" }, platform: "Node.js v7.10.1, LE, mongodb-core: 3.2.7" }

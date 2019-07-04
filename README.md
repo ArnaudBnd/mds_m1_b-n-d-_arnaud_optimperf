@@ -224,3 +224,11 @@ Dans le projet récupéré sur git,
 
   * **Code:** 400 NOT FOUND
 
+## 11. Ajout du Docker Déploiement
+
+Le port de l'api est 3000.
+    - Pour récupérer le projet, allé sur https://github.com/ArnaudBnd/mds_m1_b-n-d-_arnaud_optimperf.git.
+    - Démarrage avec un fichier docker-compose: 'docker-compose up'
+    - Allez à l'adresse localhost:3000
+    - Retrouvez les logs des instances mongo aux dossier /mongo_log/xx
+

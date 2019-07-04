@@ -1,0 +1,40 @@
+2019-07-03T09:03:44.857+0000 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-07-03T09:03:44.868+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=30002 dbpath=/data/db 64-bit host=b48aa8b69962
+2019-07-03T09:03:44.869+0000 I CONTROL  [initandlisten] db version v4.0.10
+2019-07-03T09:03:44.869+0000 I CONTROL  [initandlisten] git version: c389e7f69f637f7a1ac3cc9fae843b635f20b766
+2019-07-03T09:03:44.875+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2019-07-03T09:03:44.880+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-07-03T09:03:44.881+0000 I CONTROL  [initandlisten] modules: none
+2019-07-03T09:03:44.882+0000 I CONTROL  [initandlisten] build environment:
+2019-07-03T09:03:44.883+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2019-07-03T09:03:44.884+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2019-07-03T09:03:44.884+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-07-03T09:03:44.885+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true, port: 30002 }, replication: { replSet: "my-mongo-set" }, systemLog: { destination: "file", path: "mongo.log" } }
+2019-07-03T09:03:44.887+0000 I STORAGE  [initandlisten] 
+2019-07-03T09:03:44.888+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2019-07-03T09:03:44.890+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2019-07-03T09:03:44.891+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=487M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-07-03T09:03:46.048+0000 I STORAGE  [initandlisten] WiredTiger message [1562144626:48539][1:0x7faca632ca80], txn-recover: Set global recovery timestamp: 0
+2019-07-03T09:03:46.061+0000 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-07-03T09:03:46.197+0000 I CONTROL  [initandlisten] 
+2019-07-03T09:03:46.197+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-07-03T09:03:46.202+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-07-03T09:03:46.202+0000 I CONTROL  [initandlisten] 
+2019-07-03T09:03:46.266+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 76ae902d-6b1c-45ea-81a6-fd113e0ae33b
+2019-07-03T09:03:46.317+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2019-07-03T09:03:46.329+0000 I STORAGE  [initandlisten] createCollection: local.replset.oplogTruncateAfterPoint with generated UUID: a8f70074-e39a-47ca-af6d-96e4d38ee0a6
+2019-07-03T09:03:46.364+0000 I STORAGE  [initandlisten] createCollection: local.replset.minvalid with generated UUID: 30260aab-b515-4bcf-954a-6c74361e5fae
+2019-07-03T09:03:46.423+0000 I REPL     [initandlisten] Did not find local voted for document at startup.
+2019-07-03T09:03:46.444+0000 I REPL     [initandlisten] Did not find local Rollback ID document at startup. Creating one.
+2019-07-03T09:03:46.446+0000 I STORAGE  [initandlisten] createCollection: local.system.rollback.id with generated UUID: f7a45faf-43fb-4545-96ba-630d76738453
+2019-07-03T09:03:46.497+0000 I REPL     [initandlisten] Initialized the rollback ID to 1
+2019-07-03T09:03:46.504+0000 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2019-07-03T09:03:46.508+0000 I CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Replication has not yet been configured
+2019-07-03T09:03:46.508+0000 I NETWORK  [initandlisten] waiting for connections on port 30002
+2019-07-03T09:03:46.511+0000 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: config.system.sessions does not exist
+2019-07-03T09:03:49.516+0000 I NETWORK  [listener] connection accepted from 172.22.0.5:47786 #1 (1 connection now open)
+2019-07-03T09:03:49.527+0000 I NETWORK  [conn1] received client metadata from 172.22.0.5:47786 conn1: { driver: { name: "nodejs", version: "3.2.7" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.9.125-linuxkit" }, platform: "Node.js v7.10.1, LE, mongodb-core: 3.2.7" }
+2019-07-03T09:03:49.542+0000 I NETWORK  [conn1] end connection 172.22.0.5:47786 (0 connections now open)
+2019-07-03T09:03:49.552+0000 I NETWORK  [listener] connection accepted from 172.22.0.5:47788 #2 (1 connection now open)
+2019-07-03T09:03:49.555+0000 I NETWORK  [conn2] received client metadata from 172.22.0.5:47788 conn2: { driver: { name: "nodejs", version: "3.2.7" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.9.125-linuxkit" }, platform: "Node.js v7.10.1, LE, mongodb-core: 3.2.7" }
+2019-07-03T09:03:49.562+0000 I NETWORK  [conn2] end connection 172.22.0.5:47788 (0 connections now open)

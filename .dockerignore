@@ -1,0 +1,6 @@
+coverage
+npm-debug.log
+mongo_log
+.credentials
+.env
+node_modules
